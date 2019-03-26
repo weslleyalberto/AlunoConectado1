@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunoConectadoV100.Views.MuralPage"
+             >
+    <ContentPage.Content >
+        <AbsoluteLayout  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="jalapao5" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"/>
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                <!--   <ListView  x:Name="minhalista"  IsPullToRefreshEnabled="True"  
+                    RefreshCommand="{Binding AtualizarCommand}"  
+                    IsRefreshing="{Binding Atualizando}" SelectionMode="None"  
+                    ItemsSource="{Binding Items,Mode=TwoWay}" 
+                    CachingStrategy="RecycleElementAndDataTemplate" 
+                    HasUnevenRows="True" AbsoluteLayout.LayoutFlags="All" 
+                    AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                    BackgroundColor="Transparent">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" >
+                                        <Button
+                                            Command="{Binding Horas}"
+                                            IsEnabled="True"
+                                            Visual="Material"/>
+                                        <Label
+                                        
+                   
+                     VerticalOptions="Center"
+                    TextColor="Red"
+                    
+                    
+                  
+                  
+                    IsEnabled="True"
+                   
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="Center"
+                    Text="{Binding Data}"
+                            />
+                                        <Button
+                                            Text="{Binding Assunto}"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"
+                                            TextColor="Yellow"
+                                            BackgroundColor="Transparent" 
+                                            Visual="Material"
+                                           
+                                             HeightRequest="50"/>
+                                        <Button
+                                            Text="{Binding Informacao}"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"
+                                            TextColor="Yellow"
+                                            BackgroundColor="Transparent"
+                                             HeightRequest="100" 
+                                            />
+                                        <Button
+                                            Text="{Binding Valor}"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="CenterAndExpand"
+                                            TextColor="Yellow"
+                                            BackgroundColor="Transparent"
+                                            HeightRequest="50"
+                                           />
+                                        
+                                    </StackLayout>
+                                    
+                                </ViewCell> -->
+                    <StackLayout Orientation="Vertical" Margin="20"  HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+                        <ListView x:Name="ItemsListView" 
+            ItemsSource="{Binding Items}"
+            VerticalOptions="FillAndExpand"
+             HasUnevenRows="true"
+             RefreshCommand="{Binding AtualizarCommand}"
+             IsPullToRefreshEnabled="true"
+             IsRefreshing="{Binding Atualizando}"
+             CachingStrategy="RecycleElement"
+             SelectionMode="None">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Padding="5">
+                                            <Frame HasShadow="True" Visual="Material" Opacity="0.60" HeightRequest="180" WidthRequest="30" BorderColor="Black" CornerRadius="50"  >
+                                                <StackLayout>
+                                                    <Label Text="{Binding Data}" Visual="Material"
+                   LineBreakMode="NoWrap" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontAttributes="Bold"
+                   FontSize="20" />
+                                                    <Label Text="{Binding Assunto}" Visual="Material"
+                   LineBreakMode="NoWrap" 
+                   FontSize="18" TextColor="Blue" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+                                                    <Label Text="{Binding Informacao}" Visual="Material"
+                   LineBreakMode="NoWrap" 
+                   FontSize="18" TextColor="Blue" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+                                                    <Label Text="{Binding Valor}" Visual="Material"
+                   LineBreakMode="NoWrap" 
+                   FontSize="18" TextColor="Blue" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+                                                   
+                                                </StackLayout>
+                                            </Frame>
+
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

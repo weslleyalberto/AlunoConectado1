@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunoConectadoV100.Views.LoginPage"
+             xmlns:Forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:Material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material.Forms">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="osman" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"/>
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" >
+                    <Forms:AnimationView 
+                    Animation="user.json" 
+                    Loop="False" 
+                    AutoPlay="True"
+                    HeightRequest="100"
+                     Speed="0.5"
+                    Margin="0,80,0,50"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                    
+                    <Material:MaterialTextField 
+                    Placeholder="Usuário"
+                     VerticalOptions="Center"
+                    TextColor="White"
+                    PlaceholderColor="White"
+                    LeadingIcon="avatar"
+                    LeadingIconTintColor="White"
+                    TintColor="White"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="Center"
+                    Text="{Binding Nome}"/>
+                   
+                <Material:MaterialTextField 
+                     Placeholder="Senha"
+                     VerticalOptions="Center"
+                     InputType="Password"
+                     TextColor="White"
+                     PlaceholderColor="White"
+                     LeadingIcon="looking"
+                     ErrorColor="White"
+                     LeadingIconTintColor="White"
+                     TintColor="White"
+                     BackgroundColor="Transparent"
+                     Text="{Binding Senha}"   />
+                                               
+                <Material:MaterialButton
+                        Text="Entrar"
+                        VerticalOptions="Start" 
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        BorderColor="Yellow"
+                        Command="{Binding LoginCommand}"/>
+                    <Material:MaterialButton
+                        Text="Limpar Dados"
+                        VerticalOptions="Start"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        BorderColor="Yellow"
+                        Command="{Binding LimparCommand}"/>
+                </StackLayout>
+           </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
+                       

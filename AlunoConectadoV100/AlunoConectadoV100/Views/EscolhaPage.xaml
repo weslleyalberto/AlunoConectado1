@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunoConectadoV100.Views.EscolhaPage"
+            Title="Aluno Conectado"
+            >
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+           <!--  <Image Source="jalapao5" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"/> -->
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                 
+                    <StackLayout Orientation="Vertical" Margin="5"  HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+            
+                    <ImageButton Source="hrss" Command="{Binding HorarioCommand}" BackgroundColor="Transparent" />
+                    <Button Text="Horarios" Visual="Material"  CornerRadius="30" Command="{Binding HorarioCommand}" BackgroundColor="Transparent" />
+                    <ImageButton Source="writer" Command="{Binding MuralCommand}" BackgroundColor="Transparent"/>
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
+ 
