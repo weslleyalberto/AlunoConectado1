@@ -1,9 +1,8 @@
-﻿using AlunoConectadoV100.Interface;
-using AlunoConectadoV100.ViewModels;
+﻿using AlunoConectadoV100.ViewModels;
 using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -12,14 +11,18 @@ using Xamarin.Forms.Xaml;
 namespace AlunoConectadoV100.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EscolhaPage : ContentPage
+    public partial class Testes20 : ContentPage
     {
-        public EscolhaPage()
+       
+
+        public Testes20()
         {
             InitializeComponent();
             BindingContext = new HorarioViewModel();
-                      
-           
+
+            
         }
+
+        
     }
 }

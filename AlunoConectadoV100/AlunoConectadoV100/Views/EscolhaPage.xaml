@@ -2,24 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AlunoConectadoV100.Views.EscolhaPage"
-            Title="Aluno Conectado"
-            >
-    <ContentPage.Content>
-        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-           <!--  <Image Source="jalapao5" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"/> -->
-            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
-                 
-                    <StackLayout Orientation="Vertical" Margin="5"  HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+           
             
-                    <ImageButton Source="hrss" Command="{Binding HorarioCommand}" BackgroundColor="Transparent" />
-                    <Button Text="Horarios" Visual="Material"  CornerRadius="30" Command="{Binding HorarioCommand}" BackgroundColor="Transparent" />
-                    <ImageButton Source="writer" Command="{Binding MuralCommand}" BackgroundColor="Transparent"/>
+            Title="C. de Ensino Médio Jose Alves de Assis">
 
 
-
-                </StackLayout>
-            </ScrollView>
-        </AbsoluteLayout>
+    <ContentPage.Content>
+        <ScrollView>
+            <AbsoluteLayout BackgroundColor="Maroon" >
+                <BoxView BackgroundColor="Blue" AbsoluteLayout.LayoutBounds="0,0,1,100" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" />
+                <Button BackgroundColor="Maroon" BorderRadius="35" AbsoluteLayout.LayoutBounds=".5,55,70,70" AbsoluteLayout.LayoutFlags="XProportional" />
+                <ImageButton Source="cem" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds=".5,60,60,60" AbsoluteLayout.LayoutFlags="XProportional" />
+                <Label Text="O App que deixa o aluno sempre bem informado!" Visual="Material" FontAttributes="Bold" FontSize="18" TextColor="White" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds=".5,140,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                <AbsoluteLayout BackgroundColor="White" AbsoluteLayout.LayoutBounds="10, 220,100 ,100" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional">
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="1,0,.8,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional">
+                        <ImageButton Source="turno" />
+                        <Label FontSize="Medium" Text="Escolha Seu Turno" Visual="Material"  TextColor="Maroon" AbsoluteLayout.LayoutBounds="50,.55,1,25" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                    <!--<AbsoluteLayout AbsoluteLayout.LayoutBounds="1,0,.5,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional">
+                        <ImageButton Source="muu" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds="5,.5,40,40" AbsoluteLayout.LayoutFlags="YProportional" />
+                        <Label FontSize="18" Visual="Material" Text="Mural Escolar" TextColor="White" AbsoluteLayout.LayoutBounds="50,.55,1,25" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout> -->
+                </AbsoluteLayout>
+               
+                
+                    
+                
+                
+            </AbsoluteLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
- 

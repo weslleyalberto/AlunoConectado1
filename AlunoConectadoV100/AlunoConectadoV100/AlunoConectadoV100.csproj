@@ -31,11 +31,13 @@
   <ItemGroup>
     <Compile Remove="Views\LoginPage.xaml.cs" />
     <Compile Remove="Views\teste10.xaml.cs" />
+    <Compile Remove="Views\Testes20.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Views\LoginPage.xaml" />
     <EmbeddedResource Remove="Views\Teste10.xaml" />
+    <EmbeddedResource Remove="Views\Testes20.xaml" />
   </ItemGroup>
 
   <ItemGroup>

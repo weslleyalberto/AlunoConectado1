@@ -69,7 +69,7 @@
                                     </StackLayout>
                                     
                                 </ViewCell> -->
-                    <StackLayout Orientation="Vertical" Margin="20"  HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+                    <StackLayout Orientation="Vertical" Margin="5"  HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
                         <ListView x:Name="ItemsListView" 
             ItemsSource="{Binding Items}"
             VerticalOptions="FillAndExpand"
